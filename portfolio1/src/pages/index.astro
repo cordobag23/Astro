@@ -1,0 +1,51 @@
+---
+import Usertestimonial from '../components/Usertestimonial.astro';
+import Layout from '../layouts/Layout.astro';
+
+
+---
+<style>
+	.testimonial {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	testimonial
+	
+</style>
+
+
+
+
+<Layout title = "mi index" description = "esta seria mi descripcion parael seo">
+	<h1>sobre mi</h1>
+
+	<h2>Naruto</h2>
+
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus placeat dolorem quos consectetur cum commodi reprehenderit dolorum incidunt laborum, repellendus, sed nulla obcaecati sapiente illum ipsa suscipit sunt consequuntur nam?
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus placeat dolorem quos consectetur cum commodi reprehenderit dolorum incidunt laborum, repellendus, sed nulla obcaecati sapiente illum ipsa suscipit sunt consequuntur nam?
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus placeat dolorem quos consectetur cum commodi reprehenderit dolorum incidunt laborum, repellendus, sed nulla obcaecati sapiente illum ipsa suscipit sunt consequuntur nam?
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus placeat dolorem quos consectetur cum commodi reprehenderit dolorum incidunt laborum, repellendus, sed nulla obcaecati sapiente illum ipsa suscipit sunt consequuntur nam?
+	</p>	
+	
+<h2>Testimonios</h2>
+
+<div class="testimonial">
+	<Usertestimonial nombre="goku" parrafo="aca parrafo">
+		<p>PRIMERO Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa ipsam. Illo in ea provident voluptatibus, qui ullam ratione inventore iure omnis voluptatum vitae sunt. Iste rerum natus dolorum non?
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa ipsam. Illo in ea provident voluptatibus, qui ullam ratione inventore iure omnis voluptatum vitae sunt. Iste rerum natus dolorum non?</p>
+	</Usertestimonial>
+
+	<Usertestimonial nombre="kakashi" parrafo="aca parrafo2">
+		<p>SEGUNDO  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa ipsam. Illo in ea provident voluptatibus, qui ullam ratione inventore iure omnis voluptatum vitae sunt. Iste rerum natus dolorum non?
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa ipsam. Illo in ea provident voluptatibus, qui ullam ratione inventore iure omnis voluptatum vitae sunt. Iste rerum natus dolorum non?</p>
+	</Usertestimonial>
+
+	<Usertestimonial nombre="vegeta" parrafo="aca parrafo3">
+		<p>TERCERO  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa ipsam. Illo in ea provident voluptatibus, qui ullam ratione inventore iure omnis voluptatum vitae sunt. Iste rerum natus dolorum non?
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, culpa ipsam. Illo in ea provident voluptatibus, qui ullam ratione inventore iure omnis voluptatum vitae sunt. Iste rerum natus dolorum non?</p>
+	</Usertestimonial>
+</div>
+	
+
+</Layout>

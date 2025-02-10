@@ -1,0 +1,46 @@
+---
+const {title, description} = Astro.props;
+import NavBar from "../components/NavBar.astro";
+import Usertestimonial from "../components/Usertestimonial.astro";
+import HeroBanner from "../components/HeroBanner.astro";
+import FooterBlock from "../components/FooterBlock.astro";
+
+
+---
+
+<!--estilos globales -->
+
+<style is:global>
+	body{
+		margin: 0;
+		background-color: darkgrey;
+	}
+	
+</style>
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name = "description" content={description}/>
+		<title>{title}</title>
+
+		
+	</head>
+	<body>
+
+		
+		<NavBar/>
+		<HeroBanner></HeroBanner>
+		<slot />
+		
+		
+	</body>
+
+	<FooterBlock></FooterBlock>
+</html>
+

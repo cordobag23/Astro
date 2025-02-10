@@ -1,0 +1,5 @@
+[
+{"text":"YOTUBE", "url":"https://www.youtube.com/", "type":"youtube"},
+{"text":"TWICH", "url":"https://www.twitch.tv/?lang=es-ES", "type":"twich"},
+{"text":"DAILYMOTION", "url":"https://www.dailymotion.com/es", "type":"dailymotion"}
+]

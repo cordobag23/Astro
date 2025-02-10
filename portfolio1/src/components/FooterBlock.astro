@@ -1,0 +1,31 @@
+---
+import misredes from "../assets/socials.json";
+import '@fontsource-variable/josefin-sans';
+
+---
+<style>
+    footer{
+        background-color: black;
+        width: 100%;
+        height: 100px;
+        & .social{
+            font-family: 'Josefin Sans Variable', sans-serif;
+            font-size: 1.3rem;
+            
+            
+        }
+
+    }
+</style>
+
+
+
+
+<footer class="footer">
+    <div class="social">
+        {misredes.map(redes => <a href={redes.url}>{redes.type}</a>)}
+    </div>
+    
+
+    
+</footer>

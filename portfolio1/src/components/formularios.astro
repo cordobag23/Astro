@@ -1,0 +1,52 @@
+---
+// Manejo del formulario en el servidor--- se  carga en tiempo real cada vez q se carga el formulkario
+
+
+//tipo de peticion q vamos a reaqlizar
+
+---
+<style>
+    
+    .form{
+        color: rgb(0, 0, 0);
+        margin: 3rem 2rem;
+    }
+
+    button{
+        background-color: darkgray;
+
+    }
+
+    label{
+        margin: 2rem 2rem;
+    } 
+</style>
+
+
+
+<div>
+    <form class="form" method="post">
+
+        <label>
+            Nombre
+            <input type="text" name="username" />
+        </label>
+    
+        <label>
+            Telefono:
+            <input type="text" name="phone" />
+        </label>
+    
+        <label>
+            Correo:
+            <input type="text" name="email" />
+        </label>
+
+        <button class="button" type="submit">enviar</button>
+    
+    </form>
+</div>
+    
+
+
+

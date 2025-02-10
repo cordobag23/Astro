@@ -1,0 +1,40 @@
+---
+import '@fontsource-variable/josefin-sans';
+import misrutas from "../assets/rutas.json"
+
+---
+
+<!--estilos CSS -->
+<style>
+	nav{
+        background: black;
+        font-family: 'Josefin Sans Variable', sans-serif;
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 100;
+        justify-content: center;
+        
+    
+    & a{
+        display: block;
+        padding: 2rem 2rem;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 150;
+        &:hover{
+
+    &:nth-child(1) {background-color: gray;}
+    &:nth-child(2) {background-color: indigo;}
+    &:nth-child(3) {background-color: gray;}
+    &:nth-child(4) {background-color: indigo;}
+        }
+    }
+    }
+</style>
+
+
+<nav>
+    {misrutas.map(misrutas=><a href={misrutas.url}>{misrutas.text}</a>)};
+
+
+</nav>

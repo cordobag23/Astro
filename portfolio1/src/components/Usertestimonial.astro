@@ -1,0 +1,30 @@
+---
+import '@fontsource-variable/josefin-sans';
+const {nombre, parrafo} = Astro.props;
+
+console.log(nombre, parrafo);
+
+const imaget = "/../images/"+nombre+".png"
+---
+<style>
+    h3{
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 1ch;
+        
+    }
+    .avatar{
+        width: 200px;
+        height: 350px;
+        
+    }
+</style>
+
+
+<div class="testimonial">
+    <img class="avatar" src= {imaget} alt={nombre}>
+    <h3>{nombre}</h3>
+    <slot></slot>
+
+</div>
+
+
