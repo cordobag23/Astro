@@ -1,52 +1,49 @@
 ---
-// Manejo del formulario en el servidor--- se  carga en tiempo real cada vez q se carga el formulkario
-
-
-//tipo de peticion q vamos a reaqlizar
-
+const errors = { usuario: "", correo: "", contrasena: "" };
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const name = data.get("usuario");
+    const email = data.get("correo");
+    const password = data.get("contrasena");
+    if (typeof name !== "string" || name.length < 1) {
+      errors.usuario += "Please enter a username. ";
+    }
+    if (typeof email !== "string" || !isValidEmail(email)) {
+      errors.correo += "Email is not valid. ";
+    } else if (await isRegistered(email)) {
+      errors.correo += "Email is already registered. ";
+    }
+    if (typeof password !== "string" || password.length < 6) {
+      errors.contrasena += "Password must be at least 6 characters. ";
+    }
+    const hasErrors = Object.values(errors).some(msg => msg)
+    if (!hasErrors) {
+      await registerUser({name, email, password});
+      return Astro.redirect("/login");
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+  console.log("exitoso")
+}
 ---
-<style>
+
+<h3>Registro</h3>
+
+<form method="POST">
+    <label>Usuario <input type="text" name="usuario" required></label>
+    {errors.usuario && <p>{errors.usuario}</p>}
+     
     
-    .form{
-        color: rgb(0, 0, 0);
-        margin: 3rem 2rem;
-    }
+    <label>Correo <input type="email" name="correo" required></label>
+    {errors.correo && <p>{errors.correo}</p>}
 
-    button{
-        background-color: darkgray;
+    <label>Contraseña <input type="password" name="contrasena" required minlength="3"> </label>
+    {errors.contrasena && <p>{errors.contrasena}</p>}
 
-    }
+    <button>enviar</button>
 
-    label{
-        margin: 2rem 2rem;
-    } 
-</style>
-
-
-
-<div>
-    <form class="form" method="post">
-
-        <label>
-            Nombre
-            <input type="text" name="username" />
-        </label>
-    
-        <label>
-            Telefono:
-            <input type="text" name="phone" />
-        </label>
-    
-        <label>
-            Correo:
-            <input type="text" name="email" />
-        </label>
-
-        <button class="button" type="submit">enviar</button>
-    
-    </form>
-</div>
-    
-
-
-
+</form>
