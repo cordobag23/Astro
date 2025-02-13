@@ -1,5 +1,7 @@
 ---
 import '@fontsource/balsamiq-sans';
+
+
 ---
 
 <style>
@@ -22,16 +24,14 @@ import '@fontsource/balsamiq-sans';
         width: 39%; 
         height: 450px; 
         border-radius: 9px 0px 0px 9px;
+
+        
         
         
 
     & h2, p{color: rgb(230, 230, 230);
         padding-left: 2rem;
         font-family: 'Balsamiq Sans', system-ui;
-        
-        
-    
-    
     }
 
 }
@@ -40,6 +40,7 @@ import '@fontsource/balsamiq-sans';
         background: transparent;
         border: none;
         margin-left: 2rem;
+        margin-top: 2rem;
         
         
     
@@ -94,15 +95,18 @@ import '@fontsource/balsamiq-sans';
 <div class="contenedorprincipal">
 
     <div class="formularioimg">
-        <input type="text" placeholder="Texto" class="textoi">
-        <textarea name="parrafoi" id="parrafoi" placeholder="Párrafo" class="textoi"></textarea>
+        <form id="formularioaparte">
+            <input type="text" placeholder="Texto" class="textoi" name="textoaparte">
+            <textarea name="parrafoaparte" id="parrafoi" placeholder="Párrafo" class="textoi"></textarea>
+            
+        </form>
         
     </div>
 
-    <div class="formulariodiv">
-        <form class="formulario">
+    <div class="formulariodiv" >
+        <form class="formulario" id="nformulario">
+
             <label>Nombre completo <br><input type="text" name="nombre" placeholder="Por favor ingrese su nombre"/> </label>
-            
             <label>Telefono <br><input type="text" name="telefono" placeholder="212-111-0000"> </label>
             <label>Correo <br><input type="email" name="correo" placeholder="mail@amocrm.com"> </label>
             <label>Nota <br><input type="text" name="nota" placeholder="Comentario"> </label>
@@ -111,3 +115,5 @@ import '@fontsource/balsamiq-sans';
     </div>
     
 </div>
+
+<script src="../assets/nuevoformulario.js"></script>
