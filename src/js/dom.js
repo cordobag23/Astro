@@ -26,6 +26,7 @@ card3.classList.add("ananida"); //añado una clase a mi elemento card-3 guardado
             // .remove   elimina una clase
             // .toogle si tiene la clase q le enviamos, la elimina
             // SINO la tiene la crea y asi por cada click
+            //.replace("la q tengo". "por la q voy a cambiar")
 
 card3.addEventListener(
     "click", ()=>{card3.classList.toggle("red")}
