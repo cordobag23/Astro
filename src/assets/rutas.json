@@ -1,6 +1,6 @@
 [
 {"text" : "Inicio", "url":"/"},
 {"text" : "NuevoFormulario", "url":"/services"},
-{"text" : "Portfolio", "url":"/portfolio"},
+{"text" : "MetodosDOM", "url":"/portfolio"},
 {"text" : "Preguntas", "url":"/faq"}
 ]
