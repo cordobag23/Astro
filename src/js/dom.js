@@ -31,3 +31,22 @@ card3.classList.add("ananida"); //añado una clase a mi elemento card-3 guardado
 card3.addEventListener(
     "click", ()=>{card3.classList.toggle("red")}
 );
+
+// cambiamos el estilo css de un elemento, en este caso el , a traves del java scrip
+document.addEventListener(
+    "DOMContentLoaded", function(){
+
+        function cambiar(){
+            const estilo = document.querySelector(".parrafoescondido");
+            estilo.style.color = "black";
+            estilo.style.padding = "40px";
+            
+
+        }
+        
+
+        document.querySelector(".btnstyle").addEventListener("click", cambiar );
+
+        
+    }
+);

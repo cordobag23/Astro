@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 
 ---
-<script src="../js/dom.js"></script>
+
 
 <style>
 	
@@ -27,10 +27,14 @@ import Layout from '../layouts/Layout.astro';
 		background-color: yellowgreen;
 	}
 
+
+	.parrafoescondido{
+		color: red;
+	}
 </style>
 
 
-
+<script src="../js/dom.js"></script>
 
 
 <Layout title = "mi portafiolio" description = "esta seria mi descripcion parael seo">
@@ -63,6 +67,9 @@ import Layout from '../layouts/Layout.astro';
 
 	<h3>aca abajo insertame el parafo</h3>
 	<button type="button" id="btninsertar">insertar</button>
-	<p id="insertarp"></p>
+	<p id="insertarp" class="parrafoescondido"></p>
+	<button class="btnstyle">style</button>
+
+	
 </Layout>
 
