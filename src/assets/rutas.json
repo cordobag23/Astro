@@ -2,5 +2,5 @@
 {"text" : "Inicio", "url":"/"},
 {"text" : "NuevoFormulario", "url":"/services"},
 {"text" : "MetodosDOM", "url":"/portfolio"},
-{"text" : "Preguntas", "url":"/faq"}
+{"text" : "Eventos y delegacionEventos", "url":"/faq"}
 ]
