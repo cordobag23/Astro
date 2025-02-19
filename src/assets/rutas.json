@@ -2,5 +2,8 @@
 {"text" : "Inicio", "url":"/"},
 {"text" : "NuevoFormulario", "url":"/services"},
 {"text" : "MetodosDOM", "url":"/portfolio"},
-{"text" : "Eventos y delegacionEventos", "url":"/faq"}
+{"text" : "Eventos y delegacionEventos", "url":"/faq"},
+{"text" : "FormularioSend", "url":"/send"},
+{"text" : "Peticiones", "url":"/peticiones"}
+
 ]
