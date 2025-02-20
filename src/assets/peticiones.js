@@ -23,6 +23,15 @@ document.querySelector(".btnpeticion").addEventListener("click",
     }catch(error){
         console.log("el error es el siguiente: ", error);
     }
+
+    //localstorage
+    localStorage.setItem("nombre", "gal gadot"); //se guardan los valores hasta cerrar el navegador
+    sessionStorage.setItem("poder", "amazonia"); // se guardan valores hasta cerrar la pestaña
+
+    let nombre = localStorage.getItem("nombre");
+    let poder = sessionStorage.getItem("poder");
+    
+    console.log("nombre: ", nombre,"poder: ", poder);
     
 }
 );
