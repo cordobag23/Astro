@@ -4,6 +4,7 @@
 {"text" : "MetodosDOM", "url":"/portfolio"},
 {"text" : "Eventos y delegacionEventos", "url":"/faq"},
 {"text" : "FormularioSend", "url":"/send"},
-{"text" : "Peticiones", "url":"/peticiones"}
+{"text" : "Peticiones", "url":"/peticiones"},
+{"text" : "Temporizador", "url":"/temporizador"}
 
 ]

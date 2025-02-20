@@ -15,7 +15,7 @@ document.querySelector(".btnpeticion").addEventListener("click",
 document.querySelector(".btnpeticion").addEventListener("click", 
     async function pokemons() {
     try{
-        let response = await fetch("https://pokeapi.co/api/v2/growth-rate/");
+        let response = await fetch("https://pokeapi.co/api/v2/pokemon/");
         let data = await response.json();
       //  let mostrar = JSON.parse(data);
         //RECORREMOS EL OBJETO, recordar q se recorren por ej con el forEach
